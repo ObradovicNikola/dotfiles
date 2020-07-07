@@ -46,3 +46,18 @@ fi
 # [ -x "$(command -v prime-offload)" ] && prime-offload
 
 # exec i3
+
+
+# from xprofile -------------
+# Fix Gnome Apps Slow  Start due to failing services
+# Add this when you include flatpak in your system
+# dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+# mpd &			# music player daemon-you might prefer it as a service though
+# remaps &		# run the remaps script, switching caps/esc and more; check it for more info
+# setbg &			# set the background with the `setbg` script
+# #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &	# Uncomment to use Xresources colors/settings on startup
+# xcompmgr &		# xcompmgr for transparency
+# dunst &			# dunst for notifications
+# xset r rate 300 50 &	# Speed xrate up
+# unclutter &		# Remove mouse when idle
