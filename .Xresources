@@ -47,6 +47,9 @@ XTerm.vt100.geometry: 220x55+80+30
 XTerm*cursorBlink: true
 XTerm*cursorUnderLine: true
 XTerm*bellIsUrgent: true
+*VT100*colorMode: on
+*VT100*boldColors: on
+*VT100*dynamicColors: on
 
 ! Fonts and Encoding
 !xterm*faceName: xft:PragmataPro:size=FONTSIZE:antialias=true:hinting=true:autohint=false:hintstyle=hintnone:dpi=96

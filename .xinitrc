@@ -37,3 +37,12 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
+
+# xrandr --auto --dpi 96
+# setxbmap pl
+# xrdb -load $XDG_CONFIG_HOME/X11/Xresources
+# setxkbmap -option keypad:pointerkeys
+# echo "GPU $(glxinfo | grep -Fxq 'OpenGL vendor string: NVIDIA Corporation' && echo 'NVIDIA' || echo 'INTEL')" >> "$TMPFLAGS"
+# [ -x "$(command -v prime-offload)" ] && prime-offload
+
+# exec i3
