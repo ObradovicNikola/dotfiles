@@ -23,6 +23,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# fix glob matching
+unsetopt nomatch
+
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
