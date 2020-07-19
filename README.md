@@ -1,2 +1,2 @@
-# Archika - arch linux dotfiles
-Arch dotfiles
+# Linux dotfiles
+dotfiles
