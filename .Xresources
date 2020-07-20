@@ -34,7 +34,7 @@
 ! e.g. subdirectories of /usr/share/themes (dir)
 !Net.ThemeName /usr/share/themes
 
-Xcursor.theme: Breeze Hacked
+Xcursor.theme: Breeze_Hacked
 !Xcursor.size: 16
 
 !********
