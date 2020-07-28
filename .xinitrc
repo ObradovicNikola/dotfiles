@@ -36,6 +36,10 @@ fi
 xmodmap -e "keycode 108 = Super_L"  # reassign Alt_R to Super_L
 xmodmap -e "remove mod1 = Super_L"  # make sure X keeps it out of the mod1 group
 
+# start gnome-keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 dwmstatus &
 exec dwm
 
