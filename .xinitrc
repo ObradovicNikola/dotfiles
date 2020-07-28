@@ -1,5 +1,8 @@
 #!/bin/sh
 
+xrandr --setprovideroutputsource modsetting NVIDIA-0
+xrandr --auto
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -40,7 +43,7 @@ xmodmap -e "remove mod1 = Super_L"  # make sure X keeps it out of the mod1 group
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
-dwmstatus &
+# dwmstatus &
 exec dwm
 
 # xrandr --auto --dpi 96
